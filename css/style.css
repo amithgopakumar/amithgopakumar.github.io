@@ -1,0 +1,26 @@
+
+body {
+  margin-top: 30px;
+
+}
+#fh5co-Lpage img{
+
+  margin-top: 10px;
+  border-radius: 10px;
+  width:300px;
+  height:300px;
+
+}
+.icon-bar {
+  width: 100%;
+  overflow: auto;
+   color: #000;
+}
+
+.icon-bar a {
+  float: left;
+  width:15%;
+  transition: all 0.3s ease;
+  color: #000;
+  font-size: 15px;
+}
