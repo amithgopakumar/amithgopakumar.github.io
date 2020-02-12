@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Jounery from Ground Zero</title>
+	<title>HeadMouse</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -28,15 +28,47 @@
 				<div class="wrapper">
 					<header>
 						<h1>Head Controlled Mouse</h1>
-						<p>Samll description about the project , the place of implementation, from where the idea got etc are included in this area </p>
-            <h5> Things used in this Project</h5>
-						<p>Hardware Components </p>
-						<p> Software Components</p>
+						<p>People with severe motor disabilities require a variety of options to access computers and alternative communication technologies.
+							Tracking the head movement of the user to control the mouse cursor can be done in several ways - using a webcam or using sensors.
+							Body-worn devices with gyroscope sensor that can track the head movement are available commercially as Assistive Technology (AT).
+							Although these devices give greater independence to the users, they are very expensive and not affordable in a developing country like India.</p>
+							<p>Searching on the internet, how to make the head controlled device to operate the computer, some DIY pages gives an idea that, every one can simply make a
+								computer mouse using an Arduino development board. Referring to the Fablab documentation of
+								  Akila Surendran ( Senior Engineer in CATI ) give some more idea about how to consider the user needs also.</p>
+            <h4> Things used in this Project</h4>
+						<h6>Hardware Components </h6>
+						  <p><b><a href="http://bit.ly/2OOPfRg">Atmega32U4 x 1:</b></a>Atmega32U4 microchip  based board is used for developing this project, Atmega32U4 is a  low-power Microchip 8-bit AVR RISC-based microcontroller
+								featuring 32KB self-programming flash program memory, 2.5KB SRAM, 1KB EEPROM, USB 2.0 full-speed/low-speed device, 12-channel 10-bit A/D-converter, and JTAG interface
+								for on-chip-debug. Compare to other development boards like Arduino Uno  Atmega32u4  have the ability to be an HID controller at the same time as being able to load the
+								firmware via USB.</p>
+							<p><b><a href="http://bit.ly/39wUgWv">MPU6050 x 1:</b></a>MPU6050 is a Micro-Electro-Mechanical Systems which consists of a 3-axis Accelerometer and 3-axis Gyroscope inside it. This helps us to measure acceleration,
+								velocity, orientation, displacement and many other motion-related parameters of a system or object.	</p>
+						<h6>Software Components</h6>
+			      				<p><b>Arduino IDE :</b> For programming the microcontroller board</p>
+                  	<p><b> Fusion 360 : </b>For Design the case for  holding the sensor and microcontroller </p>
+
 						<h5>Story </h5>
-						<p>This section includes the full story of developement of the project  </p>
-								<h6>Setup</h6>
-								<p>This section includes requirement of the project, how i collect things and what steps i taken before starting the developemnt,deltails about Setttings, design and Prototype </p>
-								<h6>Schematics</h6>
+						<p>I along with Akila from NISH  and Varun intern from RET started the intial prototyping work of Head mouse.Head mouse with MPU6050 and Arduino Micro’ is the <a href="https://www.instructables.com/id/Head-Mou se-With-MPU6050-and-Arduino-Micro/">
+							Instructables page</a> that we have referred to.Further refinements to the available code had to be done to decrease the sensitivity of the gyroscope module and to increase the sensitivity of the pointer so that noise from the gyroscope is
+							neglected to avoid the ‘ghost movement’ of the pointer. The casing for the head mouse was designed using Fusion 360 and 3D-printed in Ultimaker 2.
+							To mount the head mouse over the head and hold it intact, we used the components from a headphone. More details can be found in the <a href=" http://bit.ly/hmouse">Github page</a>
+							in developing this head-controlled mouse</p>
+						 	<p>Once initial Prototype is completed , we tested the head-controlled mouse with around 10 able-bodied individuals who tried both the free camera mouse software and our DIY head-controlled
+								mouse..Everyone preferred the DIY head-controlled mouse over the camera mouse software for user-friendliness and precision in tracking and gives feedback and
+								 suggestion to head mouse. 	Considering the Feedback and Sujjestion from them, we designed a small and compactable modelwith new  firmware.</p>
+								<h6>Final Prototype</h6>
+								<p>Arduino micro is a large board and if we are using headmouse size become  quite large, so my first task is to make it smaller. I go
+									through different electronic shops various websites and finally I found a small development board with normal USB Type A, it’s compactable for our
+									final prototype.MPU6050 sensor board and Development board has almost the same size It gives a big relief to me, our product size is going to be smaller
+									than the first prototype. </p>
+
+                  <p>images of components must show here</p>
+
+									<p> After the purchase of the components, next  design the outercase for HeadMouse, First I draw sample sketch in paper and then take measurements using a digital vernier calliper.
+										 Using the measurements , designed the case for holding the Board and sensor for the head mouse. Fusion 360 cad software is used for design the case.After design ,
+										 files are exported as STL and get it printed from the 3D printer</p>
+
+								  <h6>Design Images</h6>
 								<p>Project schematics in eagle , fritsing and also includes soldering, fusion 360 design etc </p>
 								<h6>Picture</h6>
 								 <p>Final demo of project, Implementation stage,</p>
@@ -47,7 +79,9 @@
 					    	<h6>Code</h6>
 								<p> Link towards git hub  or Git lab </p>
             <h5>Credits</h5>
-						<p> Includes the credits of the project </p>
+						<p>The initial Prototype and we tested the head-controlled mouse with around 10 able-bodied individuals who tried both the free camera mouse software and our DIY head-controlled
+							mouse..Everyone preferred the DIY head-controlled mouse over the camera mouse software for user-friendliness and precision in tracking and gives feedback and
+							 suggestion to head mouse. 	Considering the Feedback and Sujjestion from them, we designed a small and compactable modelwith new  firmware.</p>
 				  </header>
 				<section>
 					<h6><a Href="index.html">Project Name</a></h6>
